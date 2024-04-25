@@ -1,15 +1,8 @@
 import { HttpClient } from '@angular/common/http';
-import {
-  EnvironmentInjector,
-  Injectable,
-  inject,
-  runInInjectionContext,
-  signal,
-} from '@angular/core';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { Injectable, inject, signal } from '@angular/core';
 import { environment } from '../../environments/environment';
 import { Product } from '../shared/models/product.interface';
-import { Observable, map, tap } from 'rxjs';
+import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class ProductsService {

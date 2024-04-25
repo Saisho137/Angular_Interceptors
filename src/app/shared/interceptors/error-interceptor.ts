@@ -13,4 +13,4 @@ export const ErrorResponseInterceptor: HttpInterceptorFn = (
 
 function handleErrorResponse(error: HttpErrorResponse): ReturnType<typeof throwError> {
   return throwError(() => `Status Code: ${error.status}, message: ${error.message}`);
-}
+};
